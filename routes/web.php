@@ -22,3 +22,4 @@ Route::prefix('index/')->group(function () {
     Route::post("/user/loginDo","Index\UserController@loginDo");//执行登录
     Route::middleware("isLogin")->get("/user/userCenter","Index\UserController@userCenter");//个人中心
 });
+Route::get('/jiajunshuai','Index\UserController@jiajunshuai');//

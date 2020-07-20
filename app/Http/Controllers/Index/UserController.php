@@ -71,4 +71,7 @@ class UserController extends Controller
         $user=Users::where("user_id",$user_id)->first();
         return view("index.user",compact("user"));
     }
+    public function jiajunshuai(){
+        echo '1111';
+    }
 }
