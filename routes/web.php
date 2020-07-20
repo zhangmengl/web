@@ -23,3 +23,4 @@ Route::prefix('index/')->group(function () {
     Route::middleware("isLogin")->get("/user/userCenter","Index\UserController@userCenter");//个人中心
 });
 Route::get('/jiajunshuai','Index\UserController@jiajunshuai');//
+Route::get('/zhangmengli','Index\UserController@zhangmengli');//
