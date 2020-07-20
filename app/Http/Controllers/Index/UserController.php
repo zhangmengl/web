@@ -8,6 +8,11 @@ use App\Model\Users;
 
 class UserController extends Controller
 {
+
+    // 晓东
+    public function wxd(){
+        echo "啥也不是";
+    }
     //前台注册
     public function reg(){
         return view("index.reg");
@@ -70,5 +75,8 @@ class UserController extends Controller
         $user_id=session("user")->user_id;
         $user=Users::where("user_id",$user_id)->first();
         return view("index.user",compact("user"));
+    }
+    public function jiajunshuai(){
+        echo '1111';
     }
 }
