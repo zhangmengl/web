@@ -8,6 +8,9 @@ use App\Model\Users;
 
 class UserController extends Controller
 {
+    public function zhangmengli(){
+        echo "张萌丽";
+    }
     //前台注册
     public function reg(){
         return view("index.reg");
